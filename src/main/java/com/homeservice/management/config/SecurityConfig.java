@@ -111,9 +111,14 @@ public class SecurityConfig {
 
         CorsConfiguration configuration = new CorsConfiguration();
 
-        configuration.setAllowedOrigins(
-            List.of("http://localhost:5173")
-        );
+      
+configuration.setAllowedOrigins(
+    List.of(
+        "http://localhost:5173",
+        "https://home-service-frontend-0hg9.onrender.com"
+    )
+);
+
 
         configuration.setAllowedMethods(
             List.of(
